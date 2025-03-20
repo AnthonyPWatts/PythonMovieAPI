@@ -1,0 +1,28 @@
+version: 1
+disable_existing_loggers: True
+
+root:
+  level: INFO
+  handlers:
+  - seq
+  - console
+
+formatters:
+  detailed:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
+handlers:
+  console:
+    class: seqlog.structured_logging.ConsoleStructuredLogHandler
+    formatter: detailed
+  seq:
+    class: seqlog.structured_logging.SeqLogHandler
+    formatter: detailed
+    server_url: 'http://host.docker.internal:5341/'
+    batch_size: 10
+    auto_flush_timeout: 10
+  file:
+    class: logging.FileHandler
+    formatter: detailed
+    filename: app.log
+    

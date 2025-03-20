@@ -1,0 +1,5 @@
+fastapi            # Web framework for building RESTful APIs quickly and easily.
+uvicorn            # ASGI server to run FastAPI applications.
+sqlalchemy         # ORM (Object Relational Mapper) for interacting with SQL databases in Python.
+pyodbc             # Driver to connect Python to Microsoft SQL Server databases.
+pydantic           # Data validation and settings management using Python type annotations.
