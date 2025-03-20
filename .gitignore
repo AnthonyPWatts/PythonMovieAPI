@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+*.egg-info/
+*.log
+
+# Virtual Environments
+Pipfile.lock
+poetry.lock
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Environment Variables
+.env
+*.secrets*
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Git & IDE
+.idea/
+*.iml
+
+# SQL / DB
+*.sqlite3
+db.sqlite3
